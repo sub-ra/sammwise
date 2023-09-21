@@ -96,11 +96,9 @@ const QuestionDesc = () => {
         { question: t("question_792796231736178614"), answers: [t("question_792796231736178614_answer_0"), t("question_792796231736178614_answer_1"), t("question_792796231736178614_answer_2")] } ,
         { question: t("question_9069879412548517933"), answers: [t("question_9069879412548517933_answer_0"), t("question_9069879412548517933_answer_1"), t("question_9069879412548517933_answer_2")] } ,
 
-    ];
+         ]
+      }
+   );
+}
 
-    return (
-        // Render the questions and answers using the `questions` array
-    );
-};
-
-export default QuestionDesc;
+export default question_desc
