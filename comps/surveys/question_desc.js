@@ -99,6 +99,7 @@ const QuestionDesc = () => {
          ]
       }
    );
+    return null;
 }
 
-export default question_desc
+export default question_desc;
