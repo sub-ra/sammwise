@@ -19,35 +19,29 @@ const About = () => {
                 <meta name = "keywords" content = "owassp-calc"/>
 
             </Head>
-            <div>
-                
-                <h2 className = {styles.title} >About this tool</h2>
-                <p className = {styles.paragraph}>The SAMMwise web application provides a convenient alternative to the 
-                    OWASP SAMM Toolkit (Excel workbook) for capturing your SAMM assessment responses.
-                     Leveraging several open-source JavaScript frameworks, the SAMMwise application 
-                     provides an intuitive, page-oriented workflow for completing a SAMM assessment, 
-                     coupled with dynamic graphics to visualize assessment results.
-                    </p>
+<div>
 
-                <h2 className = {styles.title} >Current Capabilities</h2>  
-                    <li className = {styles.paragraph}>		Evaluating an organization’s existing software security practices;</li>
-                    <li className = {styles.paragraph}>		Building toward a balanced software security assurance program in well-defined iterations;</li>
-                    <li className = {styles.paragraph}>		Demonstrating concrete improvements to a security assurance program; and </li>
-                    <li className = {styles.paragraph}>		Defining and measuring security-related activities throughout an organization.  </li>  
-                <h2 className = {styles.title}>Future Enhancements</h2>  
-                    <li className = {styles.paragraph}>			Multi-phase roadmaps - Baseline, plus up to 5 implementation phases</li>
-                    <li className = {styles.paragraph}>			Comparison with multiple previous assessments</li>
-                    <li className = {styles.paragraph}>			Comparison with SAMM Benchmark data</li>
-                    <li className = {styles.paragraph}>			Contribution of de-identified assessment results to SAMM Benchmark Project   </li>  
-                <h2 className = {styles.title} >Version History</h2>
-                <div style={{float:"right"}}>
-                    <Image src = "/DatacomLogo.png" width = {321} height = {61}/>
-                </div>
-                <p className = {styles.paragraph}>Version 1.0 - The initial release of SAMMwise was developed in July - October 2021 by the Application Security Services Team at Datacom New Zealand. 
-                    The tool was released as an open-source project and donated to the OWASP SAMM project. 
-                </p>
-            </div>
-        </>
+  <h2 className = {styles.title}>Über dieses Tool</h2>
+  <p className = {styles.paragraph}>Mit Hilfe mehrerer Open-Source-JavaScript-Frameworks bietet die SAMMwise-Anwendung einen intuitiven, seitenorientierten Workflow zur Durchführung einer SAMM-Bewertung, gekoppelt mit dynamischen Grafiken zur Visualisierung der Bewertungsergebnisse.</p>
+
+  <h2 className = {styles.title}>Aktuelle Fähigkeiten</h2>  
+  <li className = {styles.paragraph}>Bewertung der bestehenden Software-Sicherheitspraktiken einer Organisation;</li>
+  <li className = {styles.paragraph}>Aufbau eines ausgewogenen Software-Sicherheitsprogramms in gut definierten Iterationen;</li>
+  <li className = {styles.paragraph}>Demonstration konkreter Verbesserungen in einem Sicherheitsprogramm;</li>
+  <li className = {styles.paragraph}>Definition und Messung sicherheitsrelevanter Aktivitäten in einer Organisation.</li>
+
+  <h2 className = {styles.title}>Zukünftige Erweiterungen</h2>
+  <li className = {styles.paragraph}>Mehrphasige Fahrpläne - Basisversion plus bis zu 5 Implementierungsphasen</li>
+  <li className = {styles.paragraph}>Vergleich mit mehreren vorherigen Bewertungen</li>
+  <li className = {styles.paragraph}>Vergleich mit SAMM-Benchmark-Daten</li>
+  <li className = {styles.paragraph}>Beitrag von anonymisierten Bewertungsergebnissen zum SAMM Benchmark Projekt</li>
+
+  <h2 className = {styles.title}>Versionshistorie</h2>
+  <div style={{float:"right"}}>
+      <Image src="/DatacomLogo.png" width={321} height={61}/>
+  </div>
+  <p className = {styles.paragraph}>Version 1.0 - Die erste Version von SAMMwise wurde im Juli bis Oktober 2021 vom Application Security Services Team bei Datacom Neuseeland entwickelt. Das Tool wurde als Open-Source-Projekt veröffentlicht und dem OWASP SAMM-Projekt gespendet.</p>
+</div>
         );
 }
  
