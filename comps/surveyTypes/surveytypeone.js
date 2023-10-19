@@ -367,15 +367,15 @@ const Mysurvey = (prop) => {
                     var nextbtnText;
                     
                     if(isLastPanel(index)){
-                        nextbtnText = "Next Page";
+                        nextbtnText = "Nächstes Modul";
                     } else{
-                        nextbtnText = "Next Practice";
+                        nextbtnText = "Nächste Kategorie";
                     }
                     
                     var prevPanel = index - 1;
                     if (!(isFirstPanel(index))){
                         if(document.getElementById(prevID) == null){
-                            var prevbtn = createPanelButton("Previous Practice", prevID);
+                            var prevbtn = createPanelButton("Vorherige Kategorie", prevID);
                             prevbtn.onclick = function () {
                                 panels[index].collapse();
                                 panels[prevPanel].expand();
@@ -476,14 +476,14 @@ const Mysurvey = (prop) => {
         <>
             <h2>Möchten Sie frühere Ergebnisse zum Ausfüllen des Fragebogens verwenden?</h2>
             <p>Wenn Sie eine Datei mit unvollendeten Ergebnissen haben, zu denen Sie zurückkehren möchten, können Sie diese hier hochladen und der Fragebogen wird automatisch mit Ihren Antworten ausgefüllt</p>
-            <DropButton name = "Load Results" state ={dropDownState} onClick= {value =>handleDropDownButton(value)}/>
+            <DropButton name = "Ergebnisse laden" state ={dropDownState} onClick= {value =>handleDropDownButton(value)}/>
                 {dropDownState? <InputFile fileName="loadedResults" pageName="assesment"/>:null}
 
             <div className = "pageNav">
             
                     <SurveyButton name="Clear" boolean ={false} onClick={() => clearAnswers(true)}/>
 
-                    <button className="SaveResponses" onClick={()=> saveResponses()}> Save Responses </button>
+                    <button className="SaveResponses" onClick={()=> saveResponses()}> Antworten speichern </button>
                         
             </div>
             
