@@ -1,178 +1,178 @@
 const secarch = () => {return ({
     "type": "panel",
-    "name": "Security Architecture",
+    "name": "Security Architektur",
     "elements": [
       {
         "type": "radiogroup",
         "id": "c4eb5618d1814173a995f8aea96f1c0b",
-        "title": "Do teams use security principles during design?",
+        "title": "Nutzen Teams Sicherheitsprinzipien während des Designs?",
         "titleLocation": "left",
-        "description": "You have an agreed upon checklist of security principles",
+        "description": "Sie haben eine vereinbarte Checkliste von Sicherheitsprinzipien",
         "choices": [
           {
             "value": 0,
             "weight": 1,
-            "text": "No"
+            "text": "Nein"
           },
           {
             "value": 0.25,
             "weight": 1,
-            "text": "Yes, for some applications"
+            "text": "Ja, für einige Anwendungen"
           },
           {
             "value": 0.5,
             "weight": 1,
-            "text": "Yes, for at least half of the applications"
+            "text": "Ja, für mindestens die Hälfte der Anwendungen"
           },
           {
             "value": 1,
             "weight": 1,
-            "text": "Yes, for most or all of the applications"
+            "text": "Ja, für die meisten oder alle Anwendungen"
           }
         ]
       },
       {
-        "type": "radiogroup",
-        "id": "3f1a3a84c85f4e339bcc5c9ecca5c73a",
-        "title": "Do you use shared security services during design?",
-        "titleLocation": "left",
-        "description": "You have a documented list of reusable security services, available to relevant stakeholders",
-        "choices": [
-          {
-            "value": 0,
-            "weight": 1,
-            "text": "No"
-          },
-          {
-            "value": 0.25,
-            "weight": 1,
-            "text": "Yes, for some applications"
-          },
-          {
-            "value": 0.5,
-            "weight": 1,
-            "text": "Yes, for at least half of the applications"
-          },
-          {
-            "value": 1,
-            "weight": 1,
-            "text": "Yes, for most or all of the applications"
-          }
-        ]
+    "type": "radiogroup",
+    "id": "3f1a3a84c85f4e339bcc5c9ecca5c73a",
+    "title": "Verwenden Sie geteilte Sicherheitsdienste während des Designs?",
+    "titleLocation": "left",
+    "description": "Sie haben eine dokumentierte Liste von wiederverwendbaren Sicherheitsdiensten, die für relevante Stakeholder verfügbar ist",
+    "choices": [
+      {
+        "value": 0,
+        "weight": 1,
+        "text": "Nein"
+      },
+      {
+        "value": 0.25,
+        "weight": 1,
+        "text": "Ja, für einige Anwendungen"
+      },
+      {
+        "value": 0.5,
+        "weight": 1,
+        "text": "Ja, für mindestens die Hälfte der Anwendungen"
+      },
+      {
+        "value": 1,
+        "weight": 1,
+        "text": "Ja, für die meisten oder alle Anwendungen"
+      }
+    ]
       },
       {
         "type": "radiogroup",
         "id": "cb88049632b54a15b3d610c4d492e83e",
-        "title": "Do you base your design on available reference architectures?",
-        "titleLocation": "left",
-        "description": "You have one or more approved reference architectures documented and available to stakeholders",
+"title": "Basiert Ihr Design auf verfügbaren Referenzarchitekturen?",
+"titleLocation": "left",
+"description": "Sie haben eine oder mehrere genehmigte Referenzarchitekturen dokumentiert und für Stakeholder verfügbar",
         "choices": [
-          {
-            "value": 0,
-            "weight": 1,
-            "text": "No"
-          },
-          {
-            "value": 0.25,
-            "weight": 1,
-            "text": "Yes, for some applications"
-          },
-          {
-            "value": 0.5,
-            "weight": 1,
-            "text": "Yes, for at least half of the applications"
-          },
-          {
-            "value": 1,
-            "weight": 1,
-            "text": "Yes, for most or all of the applications"
+      {
+        "value": 0,
+        "weight": 1,
+        "text": "Nein"
+      },
+      {
+        "value": 0.25,
+        "weight": 1,
+        "text": "Ja, für einige Anwendungen"
+      },
+      {
+        "value": 0.5,
+        "weight": 1,
+        "text": "Ja, für mindestens die Hälfte der Anwendungen"
+      },
+      {
+        "value": 1,
+        "weight": 1,
+        "text": "Ja, für die meisten oder alle Anwendungen"
           }
         ]
       },
       {
         "type": "radiogroup",
         "id": "47c8fb0cae5944d090d7f73f7632dc9f",
-        "title": "Do you evaluate the security quality of important technologies used for development?",
+        "title": "Bewerten Sie die Sicherheitsqualität für die Entwicklung erforderlichen Technologien?",
         "titleLocation": "left",
-        "description": "You have a list of the most important technologies used in or in support of each application",
+        "description": "Sie haben eine Liste der wichtigsten Technologien, die in jeder Anwendung verwendet werden oder diese unterstützen",
         "choices": [
-          {
-            "value": 0,
-            "weight": 1,
-            "text": "No"
-          },
-          {
-            "value": 0.25,
-            "weight": 1,
-            "text": "Yes, for some applications"
-          },
-          {
-            "value": 0.5,
-            "weight": 1,
-            "text": "Yes, for at least half of the applications"
-          },
-          {
-            "value": 1,
-            "weight": 1,
-            "text": "Yes, for most or all of the applications"
+      {
+        "value": 0,
+        "weight": 1,
+        "text": "Nein"
+      },
+      {
+        "value": 0.25,
+        "weight": 1,
+        "text": "Ja, für einige Anwendungen"
+      },
+      {
+        "value": 0.5,
+        "weight": 1,
+        "text": "Ja, für mindestens die Hälfte der Anwendungen"
+      },
+      {
+        "value": 1,
+        "weight": 1,
+        "text": "Ja, für die meisten oder alle Anwendungen"
           }
         ]
       },
       {
         "type": "radiogroup",
         "id": "b63b5fa0f5bc455bb5b1dd9168c44000",
-        "title": "Do you have a list of recommended technologies for the organization?",
+        "title": "Haben Sie eine Liste von empfohlenen Technologien für die Organisation?",
         "titleLocation": "left",
-        "description": "The list is based on technologies used in the software portfolio",
+        "description": "Die Liste basiert auf den in der Software-Sammlung verwendeten Technologien",
         "choices": [
-          {
-            "value": 0,
-            "weight": 1,
-            "text": "No"
-          },
-          {
-            "value": 0.25,
-            "weight": 1,
-            "text": "Yes, for some of the technology domains"
-          },
-          {
-            "value": 0.5,
-            "weight": 1,
-            "text": "Yes, for at least half of the technology domains"
-          },
-          {
-            "value": 1,
-            "weight": 1,
-            "text": "Yes, for most or all of the technology domains"
+      {
+        "value": 0,
+        "weight": 1,
+        "text": "Nein"
+      },
+      {
+        "value": 0.25,
+        "weight": 1,
+        "text": "Ja, für einige Anwendungen"
+      },
+      {
+        "value": 0.5,
+        "weight": 1,
+        "text": "Ja, für mindestens die Hälfte der Anwendungen"
+      },
+      {
+        "value": 1,
+        "weight": 1,
+        "text": "Ja, für die meisten oder alle Anwendungen"
           }
         ]
       },
       {
         "type": "radiogroup",
         "id": "f4722a4fdfc44a45be5b5ee8dd7b735f",
-        "title": "Do you enforce the use of recommended technologies within the organization?",
+        "title": "Setzen Sie den Einsatz empfohlener Technologien innerhalb der Organisation durch?",
         "titleLocation": "left",
-        "description": "You monitor applications regularly for the correct use of the recommended technologies",
+        "description": "Sie überwachen regelmäßig Anwendungen auf den korrekten Einsatz der empfohlenen Technologien",
         "choices": [
-          {
-            "value": 0,
-            "weight": 1,
-            "text": "No"
-          },
-          {
-            "value": 0.25,
-            "weight": 1,
-            "text": "Yes, for some applications"
-          },
-          {
-            "value": 0.5,
-            "weight": 1,
-            "text": "Yes, for at least half of the applications"
-          },
-          {
-            "value": 1,
-            "weight": 1,
-            "text": "Yes, for most or all of the applications"
+      {
+        "value": 0,
+        "weight": 1,
+        "text": "Nein"
+      },
+      {
+        "value": 0.25,
+        "weight": 1,
+        "text": "Ja, für einige Anwendungen"
+      },
+      {
+        "value": 0.5,
+        "weight": 1,
+        "text": "Ja, für mindestens die Hälfte der Anwendungen"
+      },
+      {
+        "value": 1,
+        "weight": 1,
+        "text": "Ja, für die meisten oder alle Anwendungen"
           }
         ]
       }
