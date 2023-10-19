@@ -474,8 +474,8 @@ const Mysurvey = (prop) => {
 // return a page full of the Survey.JS json that was built in the "surveys" Folder 
     return (
         <>
-            <h2>Would you like to use previous results to populate the questionnaire?</h2>
-            <p>If you have a file of unfinished results that you wish to go back to you can upload them here and the questionnaire will autopopulate with your answers</p>
+            <h2>Möchten Sie frühere Ergebnisse zum Ausfüllen des Fragebogens verwenden?</h2>
+            <p>Wenn Sie eine Datei mit unvollendeten Ergebnissen haben, zu denen Sie zurückkehren möchten, können Sie diese hier hochladen und der Fragebogen wird automatisch mit Ihren Antworten ausgefüllt</p>
             <DropButton name = "Load Results" state ={dropDownState} onClick= {value =>handleDropDownButton(value)}/>
                 {dropDownState? <InputFile fileName="loadedResults" pageName="assesment"/>:null}
 
