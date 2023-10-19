@@ -1,183 +1,185 @@
-const securedeployment = () => {return ({
+const securedeployment = () => {
+  return {
     "type": "panel",
-    "name": "Secure Deployment",
+    "name": "Sichere Bereitstellung",
     "elements": [
       {
         "type": "radiogroup",
         "id": "24697d43707b4d83a6a5819a9db9a75d",
-        "title": "Do you use repeatable deployment processes?",
+        "title": "Verwenden Sie wiederholbare Bereitstellungsprozesse?",
         "titleLocation": "left",
-        "description": "You have enough information to run the deployment processes",
+        "description": "Sie verfügen über ausreichende Informationen, um die Bereitstellungsprozesse auszuführen",
         "choices": [
           {
             "value": 0,
             "weight": 1,
-            "text": "No"
+            "text": "Nein"
           },
           {
             "value": 0.25,
             "weight": 1,
-            "text": "Yes, for some applications"
+            "text": "Ja, für einige Anwendungen"
           },
           {
             "value": 0.5,
             "weight": 1,
-            "text": "Yes, for at least half of the applications"
+            "text": "Ja, für mindestens die Hälfte der Anwendungen"
           },
           {
             "value": 1,
             "weight": 1,
-            "text": "Yes, for most or all of the applications"
+            "text": "Ja, für die meisten oder alle Anwendungen"
           }
         ]
       },
       {
         "type": "radiogroup",
         "id": "7ef6753cda0d4da6ad194e56650f584d",
-        "title": "Are deployment processes automated and employing security checks?",
+        "title": "Sind Bereitstellungsprozesse automatisiert und beinhalten Sicherheitsprüfungen?",
         "titleLocation": "left",
-        "description": "Deployment processes are automated on all stages",
+        "description": "Bereitstellungsprozesse sind in allen Phasen automatisiert",
         "choices": [
           {
             "value": 0,
             "weight": 1,
-            "text": "No"
+            "text": "Nein"
           },
           {
             "value": 0.25,
             "weight": 1,
-            "text": "Yes, for some applications"
+            "text": "Ja, für einige Anwendungen"
           },
           {
             "value": 0.5,
             "weight": 1,
-            "text": "Yes, for at least half of the applications"
+            "text": "Ja, für mindestens die Hälfte der Anwendungen"
           },
           {
             "value": 1,
             "weight": 1,
-            "text": "Yes, for most or all of the applications"
+            "text": "Ja, für die meisten oder alle Anwendungen"
           }
         ]
       },
       {
         "type": "radiogroup",
         "id": "f87fddbf283a4c38b45a3125d827dd27",
-        "title": "Do you consistently validate the integrity of deployed artifacts?",
+        "title": "Validieren Sie konsequent die Integrität bereitgestellter Artefakte?",
         "titleLocation": "left",
-        "description": "You prevent or roll back deployment if you detect an integrity breach",
+        "description": "Sie verhindern oder rollen die Bereitstellung zurück, wenn Sie einen Integritätsverstoß feststellen",
         "choices": [
           {
             "value": 0,
             "weight": 1,
-            "text": "No"
+            "text": "Nein"
           },
           {
             "value": 0.25,
             "weight": 1,
-            "text": "Yes, for some applications"
+            "text": "Ja, für einige Anwendungen"
           },
           {
             "value": 0.5,
             "weight": 1,
-            "text": "Yes, for at least half of the applications"
+            "text": "Ja, für mindestens die Hälfte der Anwendungen"
           },
           {
             "value": 1,
             "weight": 1,
-            "text": "Yes, for most or all of the applications"
+            "text": "Ja, für die meisten oder alle Anwendungen"
           }
         ]
       },
       {
         "type": "radiogroup",
         "id": "37c6a5618a6344b386eb872619cfe53f",
-        "title": "Do you limit access to application secrets according to the least privilege principle?",
+        "title": "Begrenzen Sie den Zugriff auf Anwendungsgeheimnisse nach dem Prinzip des geringsten Privilegs?",
         "titleLocation": "left",
-        "description": "You store production secrets protected in a secured location",
+        "description": "Sie speichern Produktionsgeheimnisse an einem sicheren Ort",
         "choices": [
           {
             "value": 0,
             "weight": 1,
-            "text": "No"
+            "text": "Nein"
           },
           {
             "value": 0.25,
             "weight": 1,
-            "text": "Yes, for some applications"
+            "text": "Ja, für einige Anwendungen"
           },
           {
             "value": 0.5,
             "weight": 1,
-            "text": "Yes, for at least half of the applications"
+            "text": "Ja, für mindestens die Hälfte der Anwendungen"
           },
           {
             "value": 1,
             "weight": 1,
-            "text": "Yes, for most or all of the applications"
+            "text": "Ja, für die meisten oder alle Anwendungen"
           }
         ]
       },
       {
         "type": "radiogroup",
         "id": "c5f66e97db174d8c9dc2d82fbad9d4e3",
-        "title": "Do you inject production secrets into configuration files during deployment?",
+        "title": "Injizieren Sie Produktionsgeheimnisse in Konfigurationsdateien während der Bereitstellung?",
         "titleLocation": "left",
-        "description": "Source code files no longer contain active application secrets",
+        "description": "Quellcode-Dateien enthalten keine aktiven Anwendungsgeheimnisse mehr",
         "choices": [
           {
             "value": 0,
             "weight": 1,
-            "text": "No"
+            "text": "Nein"
           },
           {
             "value": 0.25,
             "weight": 1,
-            "text": "Yes, for some applications"
+            "text": "Ja, für einige Anwendungen"
           },
           {
             "value": 0.5,
             "weight": 1,
-            "text": "Yes, for at least half of the applications"
+            "text": "Ja, für mindestens die Hälfte der Anwendungen"
           },
           {
             "value": 1,
             "weight": 1,
-            "text": "Yes, for most or all of the applications"
+            "text": "Ja, für die meisten oder alle Anwendungen"
           }
         ]
       },
       {
         "type": "radiogroup",
         "id": "50af7a14ddf2408fb4576e3972cf13e3",
-        "title": "Do you practice proper lifecycle management for application secrets?",
+        "title": "Praktizieren Sie eine ordnungsgemäße Lebenszyklusverwaltung für Anwendungsgeheimnisse?",
         "titleLocation": "left",
-        "description": "You generate and synchronize secrets using a vetted solution",
+        "description": "Sie generieren und synchronisieren Geheimnisse mithilfe einer geprüften Lösung",
         "choices": [
           {
             "value": 0,
             "weight": 1,
-            "text": "No"
+            "text": "Nein"
           },
           {
             "value": 0.25,
             "weight": 1,
-            "text": "Yes, for some applications"
+            "text": "Ja, für einige Anwendungen"
           },
           {
             "value": 0.5,
             "weight": 1,
-            "text": "Yes, for at least half of the applications"
+            "text": "Ja, für mindestens die Hälfte der Anwendungen"
           },
           {
             "value": 1,
             "weight": 1,
-            "text": "Yes, for most or all of the applications"
+            "text": "Ja, für die meisten oder alle Anwendungen"
           }
         ]
       }
     ],
-    "title": "Secure Deployment",
+    "title": "Sichere Bereitstellung",
     "state": "collapsed"
-  });}
+  };
+}
 export default securedeployment;
