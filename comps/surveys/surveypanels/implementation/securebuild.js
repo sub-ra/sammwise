@@ -1,183 +1,186 @@
-const securebuild = () => {return ({
+const securebuild = () => {
+  return {
     "type": "panel",
-    "name": "Secure Build",
+    "name": "Sicheres Erstellen",
     "elements": [
       {
         "type": "radiogroup",
         "id": "70d6044a223b402c8e2b6f9d1e936641",
-        "title": "Is your full build process formally described?",
+        "title": "Ist Ihr gesamter Build-Prozess formell beschrieben?",
         "titleLocation": "left",
-        "description": "You have enough information to recreate the build processes",
+        "description": "Sie verfügen über ausreichende Informationen, um die Build-Prozesse nachzuvollziehen",
         "choices": [
           {
             "value": 0,
             "weight": 1,
-            "text": "No"
+            "text": "Nein"
           },
           {
             "value": 0.25,
             "weight": 1,
-            "text": "Yes, for some applications"
+            "text": "Ja, für einige Anwendungen"
           },
           {
             "value": 0.5,
             "weight": 1,
-            "text": "Yes, for at least half of the applications"
+            "text": "Ja, für mindestens die Hälfte der Anwendungen"
           },
           {
             "value": 1,
             "weight": 1,
-            "text": "Yes, for most or all of the applications"
+            "text": "Ja, für die meisten oder alle Anwendungen"
           }
         ]
       },
       {
         "type": "radiogroup",
         "id": "b5d33583538b4878bb4674a5f838b8ea",
-        "title": "Is the build process fully automated?",
+        "title": "Ist der Build-Prozess vollständig automatisiert?",
         "titleLocation": "left",
-        "description": "The build process itself doesn't require any human interaction",
+        "description": "Der Build-Prozess selbst erfordert keine menschliche Interaktion",
         "choices": [
           {
             "value": 0,
             "weight": 1,
-            "text": "No"
+            "text": "Nein"
           },
           {
             "value": 0.25,
             "weight": 1,
-            "text": "Yes, for some applications"
+            "text": "Ja, für einige Anwendungen"
           },
           {
             "value": 0.5,
             "weight": 1,
-            "text": "Yes, for at least half of the applications"
+            "text": "Ja, für mindestens die Hälfte der Anwendungen"
           },
           {
             "value": 1,
             "weight": 1,
-            "text": "Yes, for most or all of the applications"
+            "text": "Ja, für die meisten oder alle Anwendungen"
           }
         ]
       },
       {
         "type": "radiogroup",
         "id": "ee775955bf7f48d294c75f6384232f48",
-        "title": "Do you enforce automated security checks in your build processes?",
+        "title": "Erzwingen Sie automatisierte Sicherheitsprüfungen in Ihren Build-Prozessen?",
         "titleLocation": "left",
-        "description": "Builds fail if the application doesn't meet a predefined security baseline",
+        "description": "Builds schlagen fehl, wenn die Anwendung nicht den vordefinierten Sicherheitsrichtlinien entspricht",
         "choices": [
           {
             "value": 0,
             "weight": 1,
-            "text": "No"
+            "text": "Nein"
           },
           {
             "value": 0.25,
             "weight": 1,
-            "text": "Yes, for some applications"
+            "text": "Ja, für einige Anwendungen"
           },
           {
             "value": 0.5,
             "weight": 1,
-            "text": "Yes, for at least half of the applications"
+            "text": "Ja, für mindestens die Hälfte der Anwendungen"
           },
           {
             "value": 1,
             "weight": 1,
-            "text": "Yes, for most or all of the applications"
+            "text": "Ja, für die meisten oder alle Anwendungen"
           }
         ]
       },
       {
         "type": "radiogroup",
         "id": "1e28b82cc3ba4e4ea2552746e17c25af",
-        "title": "Do you have solid knowledge about dependencies you're relying on?",
+        "title": "Haben Sie solides Wissen über die von Ihnen verwendeten Abhängigkeiten?",
         "titleLocation": "left",
-        "description": "You have a current bill of materials (BOM) for every application",
+        "description": "Sie haben eine aktuelle Materialliste (BOM) für jede Anwendung",
         "choices": [
           {
             "value": 0,
             "weight": 1,
-            "text": "No"
+            "text": "Nein"
           },
           {
             "value": 0.25,
             "weight": 1,
-            "text": "Yes, for some applications"
+            "text": "Ja, für einige Anwendungen"
           },
           {
             "value": 0.5,
             "weight": 1,
-            "text": "Yes, for at least half of the applications"
+            "text": "Ja, für mindestens die Hälfte der Anwendungen"
           },
           {
             "value": 1,
             "weight": 1,
-            "text": "Yes, for most or all of the applications"
+            "text": "Ja, für die meisten oder alle Anwendungen"
           }
         ]
       },
       {
         "type": "radiogroup",
         "id": "ef798e60155d453186364c94a8f8935d",
-        "title": "Do you handle 3rd party dependency risk by a formal process?",
+        "title": "Behandeln Sie das Risiko von Abhängigkeiten von Drittanbietern durch einen formalen Prozess?",
         "titleLocation": "left",
-        "description": "You keep a list of approved dependencies that meet predefined criteria",
+        "description": "Sie führen eine Liste von genehmigten Abhängigkeiten, die vordefinierten Kriterien entsprechen",
         "choices": [
           {
             "value": 0,
             "weight": 1,
-            "text": "No"
+            "text": "Nein"
           },
           {
             "value": 0.25,
             "weight": 1,
-            "text": "Yes, for some applications"
+            "text": "Ja, für einige Anwendungen"
           },
           {
             "value": 0.5,
             "weight": 1,
-            "text": "Yes, for at least half of the applications"
+            "text": "Ja, für mindestens die Hälfte der Anwendungen"
           },
           {
             "value": 1,
             "weight": 1,
-            "text": "Yes, for most or all of the applications"
+            "text": "Ja, für die meisten oder alle Anwendungen"
           }
         ]
       },
       {
         "type": "radiogroup",
         "id": "418e98e2939546e69a24d0c3c4c8d217",
-        "title": "Do you prevent build of software if it's affected by vulnerabilities in dependencies?",
+        "title": "Verhindern Sie den Build von Software, wenn sie von Schwachstellen in Abhängigkeiten betroffen ist?",
         "titleLocation": "left",
-        "description": "Your build system is connected to a system for tracking 3rd party dependency risk, causing build to fail unless the vulnerability is evaluated to be a false positive or the risk is explicitly accepted",
+        "description": "Ihr Build-System ist mit einem System zur Verfolgung des Risikos von Abhängigkeiten von Drittanbietern verbunden, wodurch der Build fehlschlägt, es sei denn, die Schwachstelle wird als falsch positiv bewertet oder das Risiko wird ausdrücklich akzeptiert",
         "choices": [
           {
             "value": 0,
             "weight": 1,
-            "text": "No"
+            "text": "Nein"
           },
           {
             "value": 0.25,
             "weight": 1,
-            "text": "Yes, for some applications"
+            "text": "Ja, für einige Anwendungen"
           },
           {
             "value": 0.5,
             "weight": 1,
-            "text": "Yes, for at least half of the applications"
+            "text": "Ja, für mindestens die Hälfte der Anwendungen"
           },
           {
             "value": 1,
             "weight": 1,
-            "text": "Yes, for most or all of the applications"
+            "text": "Ja, für die meisten oder alle Anwendungen"
           }
         ]
       }
     ],
-    "title": "Secure Build",
+    "title": "Sicheres Erstellen",
     "state": "expanded"
-  });}
+  };
+}
+
 export default securebuild;
