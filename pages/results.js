@@ -109,7 +109,7 @@ const results = () => {
                     }
                     
                 }
-                completionText = 'Thank you for completing the questionnaire'   
+                completionText = 'Vielen Dank, dass Sie den Fragebogen ausgefüllt haben'   
                 
                 // put all relevant data in to the JSON for the Charts
                 // surveyCalculator JSON returns the sorted scores from the survey where Pages
@@ -195,10 +195,10 @@ const results = () => {
                         // }
 
 
-                        totalsBarGraphData[0] = testCalc.responseCount["No"]
-                        totalsBarGraphData[1] = testCalc.responseCount["Yes, for some"]
-                        totalsBarGraphData[2] = testCalc.responseCount["Yes, for most"]
-                        totalsBarGraphData[3] = testCalc.responseCount["Yes, for all"]
+                        totalsBarGraphData[0] = testCalc.responseCount["Nein"]
+                        totalsBarGraphData[1] = testCalc.responseCount["Ja, teilweise"]
+                        totalsBarGraphData[2] = testCalc.responseCount["Ja, meistens"]
+                        totalsBarGraphData[3] = testCalc.responseCount["Ja, alle"]
                         console.log(testCalc.responseCount);
                         var totalsCount = [ testCalc.responseCount["No"],testCalc.responseCount["Yes, for some"], testCalc.responseCount["Yes, for most"], testCalc.responseCount["Yes, for all"]];
 
@@ -236,7 +236,7 @@ const results = () => {
             } 
         else{
                 
-                completionText = 'You must first complete the questionnaire to see results'
+                completionText = 'Sie müssen zuerst den Fragebogen ausfüllen, um die Ergebnisse zu sehen'
             }
         }, [])
             
@@ -244,7 +244,7 @@ const results = () => {
            return(
             <>
                 <Head>
-                    <title>SAMMWise | Results </title>
+                    <title>SAMM Check | Resultate </title>
                     <meta name = "keywords" content = "owassp-calc"/>
                 </Head>
                 <h1>{completionText}</h1>
@@ -252,16 +252,16 @@ const results = () => {
                 <p>{projectDesc}</p>
                 <div ref={componentRef}>
                     <div>
-                        <SurveyButton name="Refresh Graphs" onClick={()=> reloadPage()} />
+                        <SurveyButton name="Diagramme aktualisieren" onClick={()=> reloadPage()} />
                     </div>
                     <div label='TOTALS' id="totalsDiv">
                         <Flex flexWrap = 'wrap'>
                             <Box width ={[1]} p = {3} id="box1" className="totalGraphs">
                                 {/* <h2 id="finalscore">{showPrevious? 'Your overall score is: '+ finalScore[0] + ' Your score last time was: ' +finalScore[1]:'Your overall score is: '+ finalScore[0]}</h2>
                                 <GaugeChart id="gauge-chart2" nrOfLevels={4}   textColor ={"#000000"} colors={[" #ff6384","#ff9f40","#ffcd56","#4bc0c0"]} className="gauge"/> */}
-                                <h2 id="finalscore">{showPrevious? 'Your overall score is: '+ finalScore[0]+'/3' + ' Your score last time was: ' +finalScore[1] +'/3':'Your overall score is: '+ finalScore[0] +'/3'}</h2>
+                                <h2 id="finalscore">{showPrevious? 'Ihr Gesamtergebnis ist: '+ finalScore[0]+'/3' + ' Ihr Ergebnis beim letzten Mal war: ' +finalScore[1] +'/3':'Ihr Gesamtergebnis ist: '+ finalScore[0] +'/3'}</h2>
                                 <GaugeChart id="gauge-chart2" nrOfLevels={4}  percent={percentageScore} textColor ={"#000000"} colors={[" #ff6384","#ff9f40","#ffcd56","#4bc0c0"]} className="gauge"/>
-                                <h2 id="totalsbargraph" className="totalsBarHeader"> Response count by value </h2>
+                                <h2 id="totalsbargraph" className="totalsBarHeader"> Anzahl der Antworten nach Wert </h2>
                                 <Bar data = {totalsBarGraph.metaData} options = {totalsBarGraph.layout_props} className='totalsBar' />
                             </Box> 
                         </Flex>
@@ -269,11 +269,11 @@ const results = () => {
                     <div label='Business Functions'>
                         <Flex flexWrap = 'wrap'>
                             <Box width ={[1,1/2]} p = {3} className="bussFuncRadarBox" >
-                                <h2 id = "busfuncradargraph"> Maturity by Business Function </h2>
+                                <h2 id = "busfuncradargraph"> Reifegrad nach Geschäftsfunktion </h2>
                                 <Radar data = {bussFuncRadar.metaData}  options = {bussFuncRadar.layout_props} className='bussFuncRadar'/>
                             </Box>
                             <Box width ={[1,1/2]} p = {3} className="bussFuncBarBox">
-                                <h2> Maturity by Business Function </h2>
+                                <h2> Reifegrad nach Geschäftsfunktion </h2>
                                 <Bar data = {bussFuncBarGraph.metaData} options = {bussFuncBarGraph.layout_props} className='bussFuncBar'/>
                             </Box>                  
                         </Flex>
@@ -281,32 +281,32 @@ const results = () => {
                     <div label='Practices' className="practices">
                         <Flex flexWrap = 'wrap'>
                             <Box width ={[1,1/2]} p = {3} className="practiceRadarBox">
-                                <h2 id = "pracradargraph"> Maturity by Practice </h2>
+                                <h2 id = "pracradargraph"> Reifegrad durch Praxis </h2>
                                 <Radar  data = {practiceRadar.metaData}  options = {practiceRadar.layout_props} className='practiceRadar'/>
                             </Box>
                             <Box width ={[1,1/2]} p = {3} className="practicesBarBox">
-                                <h2 id ="pracbargraph"> Maturity by Practice </h2>
+                                <h2 id ="pracbargraph"> Reifegrad durch Praxis </h2>
                                 <Bar data = {practiceBarGraph.metaData} options = {practiceBarGraph.layout_props} className='practiceBar'/>
                             </Box>
                         </Flex> 
                     </div>
                 </div>
                     <div className="jsonDownload">     
-                        <h2 className="jsonDownload">Do you wish to save your results file in JSON?</h2>
+                        <h2 className="jsonDownload">Möchten Sie Ihre Ergebnisdatei in JSON speichern?</h2>
                         <button className = 'btn'
                             onClick={()=> saveText(JSON.stringify(dataENV[0]), JSON.stringify(companyname)+JSON.stringify(projectName)+".json")}>
-                                Save file
+                                Datei speichern
                         </button>
-                        <h2 className="jsonDownload">Do you wish to load your previous results to compare?</h2>
+                        <h2 className="jsonDownload">Möchten Sie Ihre früheren Ergebnisse zum Vergleich laden?</h2>
                         <InputFile fileName = 'prevResults' className="jsonDownload"/>
                     </div>
                 
                 {/* <ComponentToPrint completionText = {completionText} projectName = {projectName} projectDesc = {projectDesc} finalScore = {finalScore} graphObjects={graphObjects}/> */}
             
             <div>
-                <h2 className='jsonDownload'> Do you wish to print or save the graphs as a pdf?</h2>
+                <h2 className='jsonDownload'> Möchten Sie die Diagramme ausdrucken oder als pdf-Datei speichern?</h2>
                     <ReactToPrint 
-                    trigger={() => <button className='btn'>Export graphs</button>}
+                    trigger={() => <button className='btn'>Diagramme exportieren</button>}
                     content={()=>  componentRef.current}
                     />
             </div>
