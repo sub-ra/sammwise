@@ -177,7 +177,7 @@ const secarch = () => {return ({
         ]
       }
     ],
-    "title": "Security Architecture",
+    "title": "Security Architektur",
     "state": "collapsed"
   });}
 export default secarch;
