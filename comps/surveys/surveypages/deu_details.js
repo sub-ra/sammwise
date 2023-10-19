@@ -3,18 +3,18 @@ var tosend = {
   elements: [
     {
       'type': 'text',
-      'name': 'Company Name'
+      'name': 'Unternehmen'
     },
     {
       'type': 'text',
-      'name': 'Project name'
+      'name': 'Anwendungs- oder Projektname'
     },
     {
       'type': 'text',
-      'name': 'Description of Project'
+      'name': 'Anwendungs- oder Projektbeschreibung'
     }
   ],
-  'description': 'These are optional, the only use for these will be to help categorize the results you receive, eg: title of results document ETC '
+  'description': 'Diese Angaben sind fakultativ und dienen lediglich dazu, die erhaltenen Ergebnisse zu kategorisieren, z.B.: Titel des Ergebnisdokuments etc. '
 };
 const detailsJSON = () => {
   return tosend;
