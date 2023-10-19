@@ -1,184 +1,184 @@
 const education = () => {
     return {
         'type': 'panel',
-        'name': 'Education and Guidance',
+        'name': 'Bildung und Anleitung',
         'elements': [
             {
                 'type': 'radiogroup',
                 'id': '3d801ea0b0ad4c44ba2b0408ebcc750b',
-                'title': 'Do you require employees involved with application development to take SDLC training?',
+                'title': 'Verlangen Sie von den mit der Anwendungsentwicklung beschäftigten Mitarbeitern, dass sie eine SDLC-Schulung absolvieren?',
                 'titleLocation': 'left',
-                'description': 'Training is repeatable, consistent, and available to anyone involved with software development lifecycle',
+                'description': 'Die Schulung ist wiederholbar, konsistent und für jeden, der am Softwareentwicklungs-Lebenszyklus beteiligt ist, verfügbar',
                 'choices': [
                     {
                         'value': 0,
                         'weight': 1,
-                        'text': 'No'
+                        'text': 'Nein'
                     },
                     {
                         'value': '0.25',
                         'weight': 1,
-                        'text': 'Yes, some of them'
+                        'text': 'Ja, einige von ihnen'
                     },
                     {
                         'value': '0.5',
                         'weight': 1,
-                        'text': 'Yes, at least half of them'
+                        'text': 'Ja, mindestens die Hälfte von ihnen'
                     },
                     {
                         'value': 1,
                         'weight': 1,
-                        'text': 'Yes, most or all of them'
+                        'text': 'Ja, die meisten oder alle von ihnen'
                     }
                 ]
             },
             {
                 'type': 'radiogroup',
                 'id': '1962ef9fe4cf488a8d10ccbcdc8bb926',
-                'title': 'Is training customized for individual roles such as developers, testers, or security champions?',
+                'title': 'Ist die Schulung für einzelne Rollen wie Entwickler, Tester oder Sicherheitsbeauftragte angepasst?',
                 'titleLocation': 'left',
-                'description': 'Training includes all topics from maturity level 1, and adds more specific tools, techniques, and demonstrations',
+                'description': 'Die Schulung beinhaltet alle Themen der Reifestufe 1 und fügt spezifischere Tools, Techniken und Demonstrationen hinzu',
                 'choices': [
                     {
                         'value': 0,
                         'weight': 1,
-                        'text': 'No'
+                        'text': 'Nein'
                     },
                     {
                         'value': '0.25',
                         'weight': 1,
-                        'text': 'Yes, for some of the training'
+                        'text': 'Ja, für einen Teil der Schulung'
                     },
                     {
                         'value': '0.5',
                         'weight': 1,
-                        'text': 'Yes, for at least half of the training'
+                        'text': 'Ja, für mindestens die Hälfte der Schulung'
                     },
                     {
                         'value': 1,
                         'weight': 1,
-                        'text': 'Yes, for most or all of the training'
+                        'text': 'Ja, für den Großteil oder die gesamte Schulung'
                     }
                 ]
             },
             {
                 'type': 'radiogroup',
                 'id': 'c7147e96d99849a994e63d5732c26220',
-                'title': 'Have you implemented a Learning Management System or equivalent to track employee training and certification processes?',
+                'title': 'Haben Sie ein Learning Management System oder Ähnliches implementiert, um Mitarbeiter-Schulungen und Zertifizierungsprozesse nachzuverfolgen?',
                 'titleLocation': 'left',
-                'description': 'A Learning Management System (LMS) is used to track trainings and certifications',
+                'description': 'Ein Learning Management System (LMS) wird verwendet, um Schulungen und Zertifizierungen nachzuverfolgen',
                 'choices': [
                     {
                         'value': 0,
                         'weight': 1,
-                        'text': 'No'
+                        'text': 'Nein'
                     },
                     {
                         'value': '0.25',
                         'weight': 1,
-                        'text': 'Yes, for some of the training'
+                        'text': 'Ja, für einen Teil der Schulung'
                     },
                     {
                         'value': '0.5',
                         'weight': 1,
-                        'text': 'Yes, for at least half of the training'
+                        'text': 'Ja, für mindestens die Hälfte der Schulung'
                     },
                     {
                         'value': 1,
                         'weight': 1,
-                        'text': 'Yes, for most or all of the training'
+                        'text': 'Ja, für den Großteil oder die gesamte Schulung'
                     }
                 ]
             },
             {
                 'type': 'radiogroup',
                 'id': '21a9b65765a844e0b27a074f2b4306a1',
-                'title': 'Have you identified a Security Champion for each development team?',
+                'title': 'Haben Sie für jedes Entwicklungsteam einen Sicherheitsbeauftragten identifiziert?',
                 'titleLocation': 'left',
-                'description': 'Security Champions receive appropriate training',
+                'description': 'Sicherheitsbeauftragte erhalten eine angemessene Schulung',
                 'choices': [
                     {
                         'value': 0,
                         'weight': 1,
-                        'text': 'No'
+                        'text': 'Nein'
                     },
                     {
                         'value': '0.25',
                         'weight': 1,
-                        'text': 'Yes, for some teams'
+                        'text': 'Ja, für einige Teams'
                     },
                     {
                         'value': '0.5',
                         'weight': 1,
-                        'text': 'Yes, for at least half of the teams'
+                        'text': 'Ja, für mindestens die Hälfte der Teams'
                     },
                     {
                         'value': 1,
                         'weight': 1,
-                        'text': 'Yes, for most or all of the teams'
+                        'text': 'Ja, für die meisten oder alle Teams'
                     }
                 ]
             },
             {
                 'type': 'radiogroup',
                 'id': 'fe0485b5026d4b2b9a7c99260addc912',
-                'title': 'Does the organization have a Secure Software Center of Excellence (SSCE)?',
+                'title': 'Hat die Organisation ein Secure Software Center of Excellence (SSCE)?',
                 'titleLocation': 'left',
-                'description': 'The SSCE has a charter defining its role in the organization',
+                'description': 'Das SSCE hat eine Charta, die seine Rolle in der Organisation definiert',
                 'choices': [
                     {
                         'value': 0,
                         'weight': 1,
-                        'text': 'No'
+                        'text': 'Nein'
                     },
                     {
                         'value': '0.25',
                         'weight': 1,
-                        'text': 'Yes, we started implementing it'
+                        'text': 'Ja, wir haben mit der Implementierung begonnen'
                     },
                     {
                         'value': '0.5',
                         'weight': 1,
-                        'text': 'Yes, for part of the organization'
+                        'text': 'Ja, für einen Teil der Organisation'
                     },
                     {
                         'value': 1,
                         'weight': 1,
-                        'text': 'Yes, for the entire organization'
+                        'text': 'Ja, für die gesamte Organisation'
                     }
                 ]
             },
             {
                 'type': 'radiogroup',
                 'id': '871a30e6aaef4905a3d3302ceea808f4',
-                'title': 'Is there a centralized portal where developers and application security professionals from different teams and business units are able to communicate and share information?',
+                'title': 'Gibt es ein zentrales Portal, auf dem Entwickler und Anwendungssicherheitsfachleute aus verschiedenen Teams und Geschäftseinheiten kommunizieren und Informationen austauschen können?',
                 'titleLocation': 'left',
-                'description': 'The organization promotes use of a single portal across different teams and business units',
+                'description': 'Die Organisation fördert die Nutzung eines einzigen Portals über verschiedene Teams und Geschäftseinheiten hinweg',
                 'choices': [
                     {
                         'value': 0,
                         'weight': 1,
-                        'text': 'No'
+                        'text': 'Nein'
                     },
                     {
                         'value': '0.25',
                         'weight': 1,
-                        'text': 'Yes, we started implementing it'
+                        'text': 'Ja, wir haben mit der Implementierung begonnen'
                     },
                     {
                         'value': '0.5',
                         'weight': 1,
-                        'text': 'Yes, for part of the organization'
+                        'text': 'Ja, für einen Teil der Organisation'
                     },
                     {
                         'value': 1,
                         'weight': 1,
-                        'text': 'Yes, for the entire organization'
+                        'text': 'Ja, für die gesamte Organisation'
                     }
                 ]
             }
         ],
-        'title': 'Education and Guidance',
+        'title': 'Bildung und Anleitung',
         'state': 'collapsed'
     };
 };
