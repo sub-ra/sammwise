@@ -1,183 +1,186 @@
-const defectmanagement = () => {return ({
+const defectmanagement = () => {
+  return {
     "type": "panel",
-    "name": "Defect Management",
+    "name": "Fehlermanagement",
     "elements": [
       {
         "type": "radiogroup",
         "id": "7f92b3f940cb4229a6079016269d76c6",
-        "title": "Do you track all known security defects in accessible locations?",
+        "title": "Verfolgen Sie alle bekannten Sicherheitsmängel an zugänglichen Stellen?",
         "titleLocation": "left",
-        "description": "You can easily get an overview of all security defects impacting one application",
+        "description": "Sie können leicht einen Überblick über alle Sicherheitsmängel erhalten, die eine Anwendung beeinflussen",
         "choices": [
           {
             "value": 0,
             "weight": 1,
-            "text": "No"
+            "text": "Nein"
           },
           {
             "value": 0.25,
             "weight": 1,
-            "text": "Yes, for some applications"
+            "text": "Ja, für einige Anwendungen"
           },
           {
             "value": 0.5,
             "weight": 1,
-            "text": "Yes, for at least half of the applications"
+            "text": "Ja, für mindestens die Hälfte der Anwendungen"
           },
           {
             "value": 1,
             "weight": 1,
-            "text": "Yes, for most or all of the applications"
+            "text": "Ja, für die meisten oder alle Anwendungen"
           }
         ]
       },
       {
         "type": "radiogroup",
         "id": "5b333ff2dd474381b0af595ff13dcdcf",
-        "title": "Do you keep an overview of the state of security defects across the organization?",
+        "title": "Behalten Sie den Überblick über den Status von Sicherheitsmängeln in der gesamten Organisation?",
         "titleLocation": "left",
-        "description": "A single severity scheme is applied to all defects across the organization",
+        "description": "Ein einheitliches Schweregradschema wird auf alle Mängel in der Organisation angewendet",
         "choices": [
           {
             "value": 0,
             "weight": 1,
-            "text": "No"
+            "text": "Nein"
           },
           {
             "value": 0.25,
             "weight": 1,
-            "text": "Yes, for some applications"
+            "text": "Ja, für einige Anwendungen"
           },
           {
             "value": 0.5,
             "weight": 1,
-            "text": "Yes, for at least half of the applications"
+            "text": "Ja, für mindestens die Hälfte der Anwendungen"
           },
           {
             "value": 1,
             "weight": 1,
-            "text": "Yes, for most or all of the applications"
+            "text": "Ja, für die meisten oder alle Anwendungen"
           }
         ]
       },
       {
         "type": "radiogroup",
         "id": "6b5eac7b9e2f49e2a2cda600ef70ad99",
-        "title": "Do you enforce SLAs for fixing security defects?",
+        "title": "Erzwingen Sie SLAs zur Behebung von Sicherheitsmängeln?",
         "titleLocation": "left",
-        "description": "You automatically alert of SLA breaches and transfer respective defects to the risk management process",
+        "description": "Sie werden automatisch über SLA-Verstöße informiert und übertragen entsprechende Mängel an den Risikomanagementprozess",
         "choices": [
           {
             "value": 0,
             "weight": 1,
-            "text": "No"
+            "text": "Nein"
           },
           {
             "value": 0.25,
             "weight": 1,
-            "text": "Yes, for some applications"
+            "text": "Ja, für einige Anwendungen"
           },
           {
             "value": 0.5,
             "weight": 1,
-            "text": "Yes, for at least half of the applications"
+            "text": "Ja, für mindestens die Hälfte der Anwendungen"
           },
           {
             "value": 1,
             "weight": 1,
-            "text": "Yes, for most or all of the applications"
+            "text": "Ja, für die meisten oder alle Anwendungen"
           }
         ]
       },
       {
         "type": "radiogroup",
         "id": "29df0959af8f403383c8ad01a0f3c478",
-        "title": "Do you use basic metrics about recorded security defects to carry out quick win improvement activities?",
+        "title": "Verwenden Sie grundlegende Kennzahlen zu erfassten Sicherheitsmängeln, um schnelle Verbesserungsmaßnahmen durchzuführen?",
         "titleLocation": "left",
-        "description": "You analyzed your recorded metrics at least once in the last year",
+        "description": "Sie haben Ihre erfassten Kennzahlen mindestens einmal im letzten Jahr analysiert",
         "choices": [
           {
             "value": 0,
             "weight": 1,
-            "text": "No"
+            "text": "Nein"
           },
           {
             "value": 0.25,
             "weight": 1,
-            "text": "Yes, for some applications"
+            "text": "Ja, für einige Anwendungen"
           },
           {
             "value": 0.5,
             "weight": 1,
-            "text": "Yes, for at least half of the applications"
+            "text": "Ja, für mindestens die Hälfte der Anwendungen"
           },
           {
             "value": 1,
             "weight": 1,
-            "text": "Yes, for most or all of the applications"
+            "text": "Ja, für die meisten oder alle Anwendungen"
           }
         ]
       },
       {
         "type": "radiogroup",
         "id": "1a849e8fd3ae41a4b3675947482426da",
-        "title": "Do you improve your security assurance program upon standardized metrics?",
+        "title": "Verbessern Sie Ihr Sicherheitsgewährleistungsprogramm auf der Grundlage standardisierter Kennzahlen?",
         "titleLocation": "left",
-        "description": "You document metrics for defect classification and categorization and keep them up to date",
+        "description": "Sie dokumentieren Kennzahlen für die Fehlerklassifizierung und -kategorisierung und halten sie auf dem neuesten Stand",
         "choices": [
           {
             "value": 0,
             "weight": 1,
-            "text": "No"
+            "text": "Nein"
           },
           {
             "value": 0.25,
             "weight": 1,
-            "text": "Yes, for some applications"
+            "text": "Ja, für einige Anwendungen"
           },
           {
             "value": 0.5,
             "weight": 1,
-            "text": "Yes, for at least half of the applications"
+            "text": "Ja, für mindestens die Hälfte der Anwendungen"
           },
           {
             "value": 1,
             "weight": 1,
-            "text": "Yes, for most or all of the applications"
+            "text": "Ja, für die meisten oder alle Anwendungen"
           }
         ]
       },
       {
         "type": "radiogroup",
         "id": "0247b5b573b843609fdff791a1cc7c1b",
-        "title": "Do you regularly evaluate the effectiveness of your security metrics so that its input helps drive your security strategy?",
+        "title": "Bewerten Sie regelmäßig die Wirksamkeit Ihrer Sicherheitskennzahlen, damit ihre Eingabe Ihre Sicherheitsstrategie vorantreibt?",
         "titleLocation": "left",
-        "description": "You have analyzed the effectivenss of the security metrics at least once in the last year",
+        "description": "Sie haben mindestens einmal im letzten Jahr die Wirksamkeit der Sicherheitskennzahlen analysiert",
         "choices": [
           {
             "value": 0,
             "weight": 1,
-            "text": "No"
+            "text": "Nein"
           },
           {
             "value": 0.25,
             "weight": 1,
-            "text": "Yes, for some applications"
+            "text": "Ja, für einige Anwendungen"
           },
           {
             "value": 0.5,
             "weight": 1,
-            "text": "Yes, for at least half of the applications"
+            "text": "Ja, für mindestens die Hälfte der Anwendungen"
           },
           {
             "value": 1,
             "weight": 1,
-            "text": "Yes, for most or all of the applications"
+            "text": "Ja, für die meisten oder alle Anwendungen"
           }
         ]
       }
     ],
-    "title": "Defect Management",
+    "title": "Fehlermanagement",
     "state": "collapsed"
-  });}
+  };
+}
+
 export default defectmanagement;
