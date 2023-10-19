@@ -7,11 +7,11 @@ var tosend = {
      },
      {
       "type": "text",
-      "name": "Projektname"
+      "name": "Anwendungs- oder Projektname"
      },
      {
       "type": "text",
-      "name": "Projektbeschreibung"
+      "name": "Anwendungs- oder Projektbeschreibung"
      }
     ],
     "description": "Diese Angaben sind fakultativ und dienen lediglich dazu, die erhaltenen Ergebnisse zu kategorisieren, z.B.: Titel des Ergebnisdokuments etc. "
