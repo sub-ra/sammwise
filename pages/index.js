@@ -45,12 +45,12 @@ export default function Home() {
   return (
     <>
     <Head>
-      <title>Maturitäts Check | Home </title>
+      <title>SAMM Check | Home </title>
       <meta name = "keywords" content = "owassp-calc"/>
     </Head>
 <div>
-  <h1 className = {styles.title}>SAMMWise</h1>
-  <p className = {styles.paragraph}>SAMMwise bietet eine benutzerfreundliche, browserbasierte Schnittstelle zur Erfassung von SAMM-Bewertungsantworten. Mit diesem Tool können Benutzer:</p>
+  <h1 className = {styles.title}>SAMM Check</h1>
+  <p className = {styles.paragraph}>SAMM Check bietet eine benutzerfreundliche, browserbasierte Schnittstelle zur Erfassung von SAMM-Bewertungsantworten. Mit diesem Tool können Benutzer:</p>
       <li className = {styles.paragraph}>Antworten für eine einzelne Bewertung eingeben</li>
       <li className = {styles.paragraph}>Die Reifeergebnisse auf Grundlage der eingegebenen Antworten visualisieren</li>
       <li className = {styles.paragraph}>Reifeergebnisse mit denen einer vorherigen Bewertung vergleichen</li>
