@@ -1,183 +1,185 @@
-const secrequirement = () => {return ({
-    "type": "panel",
-    "name": "Security Requirements",
-    "elements": [
-      {
-        "type": "radiogroup",
-        "id": "645207bf33584cc6a535e42bae7667c9",
-        "title": "Do project teams specify security requirements during development?",
-        "titleLocation": "left",
-        "description": "Teams derive security requirements from functional requirements and customer or organization concerns",
-        "choices": [
+const secrequirement = () => {
+  return ({
+      "type": "panel",
+      "name": "Sicherheitsanforderungen",
+      "elements": [
           {
-            "value": 0,
-            "weight": 1,
-            "text": "No"
+              "type": "radiogroup",
+              "id": "645207bf33584cc6a535e42bae7667c9",
+              "title": "Legen Projektteams Sicherheitsanforderungen während der Entwicklung fest?",
+              "titleLocation": "left",
+              "description": "Teams leiten Sicherheitsanforderungen aus funktionalen Anforderungen und Kunden- oder Organisationsanliegen ab",
+              "choices": [
+                  {
+                      "value": 0,
+                      "weight": 1,
+                      "text": "Nein"
+                  },
+                  {
+                      "value": 0.25,
+                      "weight": 1,
+                      "text": "Ja, für einige Anwendungen"
+                  },
+                  {
+                      "value": 0.5,
+                      "weight": 1,
+                      "text": "Ja, für mindestens die Hälfte der Anwendungen"
+                  },
+                  {
+                      "value": 1,
+                      "weight": 1,
+                      "text": "Ja, für die meisten oder alle Anwendungen"
+                  }
+              ]
           },
           {
-            "value": 0.25,
-            "weight": 1,
-            "text": "Yes, for some applications"
+              "type": "radiogroup",
+              "id": "2d458a65858c48af94f25f9858bd8ed7",
+              "title": "Definieren, strukturieren und priorisieren Sie in den Artefakten des Sicherheitsanforderungserhebungsprozesses?",
+              "titleLocation": "left",
+              "description": "Sicherheitsanforderungen berücksichtigen domänenspezifisches Wissen, wenn sie Richtlinien und Anleitungen für die Produktentwicklung anwenden",
+              "choices": [
+                  {
+                      "value": 0,
+                      "weight": 1,
+                      "text": "Nein"
+                  },
+                  {
+                      "value": 0.25,
+                      "weight": 1,
+                      "text": "Ja, manchmal"
+                  },
+                  {
+                      "value": 0.5,
+                      "weight": 1,
+                      "text": "Ja, mindestens die Hälfte der Zeit"
+                  },
+                  {
+                      "value": 1,
+                      "weight": 1,
+                      "text": "Ja, meistens oder immer"
+                  }
+              ]
           },
           {
-            "value": 0.5,
-            "weight": 1,
-            "text": "Yes, for at least half of the applications"
+              "type": "radiogroup",
+              "id": "dad421c501994b0fa2b2ab94ffe61176",
+              "title": "Verwenden Sie ein standardisiertes Anforderungsframework, um die Erhebung von Sicherheitsanforderungen zu optimieren?",
+              "titleLocation": "left",
+              "description": "Ein Sicherheitsanforderungs-Framework steht Projektteams zur Verfügung",
+              "choices": [
+                  {
+                      "value": 0,
+                      "weight": 1,
+                      "text": "Nein"
+                  },
+                  {
+                      "value": 0.25,
+                      "weight": 1,
+                      "text": "Ja, für einige Anwendungen"
+                  },
+                  {
+                      "value": 0.5,
+                      "weight": 1,
+                      "text": "Ja, für mindestens die Hälfte der Anwendungen"
+                  },
+                  {
+                      "value": 1,
+                      "weight": 1,
+                      "text": "Ja, für die meisten oder alle Anwendungen"
+                  }
+              ]
           },
           {
-            "value": 1,
-            "weight": 1,
-            "text": "Yes, for most or all of the applications"
+              "type": "radiogroup",
+              "id": "795e7ddd03f2443c851e34fc6e023d71",
+              "title": "Überprüfen Stakeholder die Zusammenarbeit mit Anbietern hinsichtlich Sicherheitsanforderungen und Methodik?",
+              "titleLocation": "left",
+              "description": "Sie ziehen in Erwägung, spezifische Sicherheitsanforderungen, Aktivitäten und Prozesse bei der Erstellung von Vereinbarungen mit Dritten einzubeziehen",
+              "choices": [
+                  {
+                      "value": 0,
+                      "weight": 1,
+                      "text": "Nein"
+                  },
+                  {
+                      "value": 0.25,
+                      "weight": 1,
+                      "text": "Ja, manchmal"
+                  },
+                  {
+                      "value": 0.5,
+                      "weight": 1,
+                      "text": "Ja, mindestens die Hälfte der Zeit"
+                  },
+                  {
+                      "value": 1,
+                      "weight": 1,
+                      "text": "Ja, meistens oder immer"
+                  }
+              ]
+          },
+          {
+              "type": "radiogroup",
+              "id": "dffdd9659e6243d7bcbcbc0dff4429fc",
+              "title": "Erfüllen Anbieter die Sicherheitsverantwortlichkeiten und Qualitätsmaßstäbe der vom Unternehmen definierten Service-Level-Vereinbarungen?",
+              "titleLocation": "left",
+              "description": "Sie diskutieren Sicherheitsanforderungen mit dem Anbieter bei der Erstellung von Anbietervereinbarungen",
+              "choices": [
+                  {
+                      "value": 0,
+                      "weight": 1,
+                      "text": "Nein"
+                  },
+                  {
+                      "value": 0.25,
+                      "weight": 1,
+                      "text": "Ja, manchmal"
+                  },
+                  {
+                      "value": 0.5,
+                      "weight": 1,
+                      "text": "Ja, mindestens die Hälfte der Zeit"
+                  },
+                  {
+                      "value": 1,
+                      "weight": 1,
+                      "text": "Ja, meistens oder immer"
+                  }
+              ]
+          },
+          {
+              "type": "radiogroup",
+              "id": "497753e656514aa6bdf3030bebcb3fbe",
+              "title": "Sind Anbieter mit den standardmäßigen Sicherheitskontrollen und Softwareentwicklungstools und -prozessen abgestimmt, die das Unternehmen verwendet?",
+              "titleLocation": "left",
+              "description": "Der Anbieter verfügt über einen sicheren SDLC, der sicheres Bauen, sicheres Bereitstellen, Fehlermanagement und Vorfallmanagement beinhaltet, die sich mit denen in Ihrer Organisation abstimmen",
+              "choices": [
+                  {
+                      "value": 0,
+                      "weight": 1,
+                      "text": "Nein"
+                  },
+                  {
+                      "value": 0.25,
+                      "weight": 1,
+                      "text": "Ja, manchmal"
+                  },
+                  {
+                      "value": 0.5,
+                      "weight": 1,
+                      "text": "Ja, mindestens die Hälfte der Zeit"
+                  },
+                  {
+                      "value": 1,
+                      "weight": 1,
+                      "text": "Ja, meistens oder immer"
+                  }
+              ]
           }
-        ]
-      },
-      {
-        "type": "radiogroup",
-        "id": "2d458a65858c48af94f25f9858bd8ed7",
-        "title": "Do you define, structure, and include prioritization in the artifacts of the security requirements gathering process?",
-        "titleLocation": "left",
-        "description": "Security requirements take into consideration domain specific knowledge when applying policies and guidance to product development",
-        "choices": [
-          {
-            "value": 0,
-            "weight": 1,
-            "text": "No"
-          },
-          {
-            "value": 0.25,
-            "weight": 1,
-            "text": "Yes, some of the time"
-          },
-          {
-            "value": 0.5,
-            "weight": 1,
-            "text": "Yes, at least half of the time"
-          },
-          {
-            "value": 1,
-            "weight": 1,
-            "text": "Yes, most or all of the time"
-          }
-        ]
-      },
-      {
-        "type": "radiogroup",
-        "id": "dad421c501994b0fa2b2ab94ffe61176",
-        "title": "Do you use a standard requirements framework to streamline the elicitation of security requirements?",
-        "titleLocation": "left",
-        "description": "A security requirements framework is available for project teams",
-        "choices": [
-          {
-            "value": 0,
-            "weight": 1,
-            "text": "No"
-          },
-          {
-            "value": 0.25,
-            "weight": 1,
-            "text": "Yes, for some applications"
-          },
-          {
-            "value": 0.5,
-            "weight": 1,
-            "text": "Yes, for at least half of the applications"
-          },
-          {
-            "value": 1,
-            "weight": 1,
-            "text": "Yes, for most or all of the applications"
-          }
-        ]
-      },
-      {
-        "type": "radiogroup",
-        "id": "795e7ddd03f2443c851e34fc6e023d71",
-        "title": "Do stakeholders review vendor collaborations for security requirements and methodology?",
-        "titleLocation": "left",
-        "description": "You consider including specific security requirements, activities, and processes when creating third-party agreements",
-        "choices": [
-          {
-            "value": 0,
-            "weight": 1,
-            "text": "No"
-          },
-          {
-            "value": 0.25,
-            "weight": 1,
-            "text": "Yes, some of the time"
-          },
-          {
-            "value": 0.5,
-            "weight": 1,
-            "text": "Yes, at least half of the time"
-          },
-          {
-            "value": 1,
-            "weight": 1,
-            "text": "Yes, most or all of the time"
-          }
-        ]
-      },
-      {
-        "type": "radiogroup",
-        "id": "dffdd9659e6243d7bcbcbc0dff4429fc",
-        "title": "Do vendors meet the security responsibilities and quality measures of service level agreements defined by the organization?",
-        "titleLocation": "left",
-        "description": "You discuss security requirements with the vendor when creating vendor agreements",
-        "choices": [
-          {
-            "value": 0,
-            "weight": 1,
-            "text": "No"
-          },
-          {
-            "value": 0.25,
-            "weight": 1,
-            "text": "Yes, some of the time"
-          },
-          {
-            "value": 0.5,
-            "weight": 1,
-            "text": "Yes, at least half of the time"
-          },
-          {
-            "value": 1,
-            "weight": 1,
-            "text": "Yes, most or all of the time"
-          }
-        ]
-      },
-      {
-        "type": "radiogroup",
-        "id": "497753e656514aa6bdf3030bebcb3fbe",
-        "title": "Are vendors aligned with standard security controls and software development tools and processes that the organization utilizes?",
-        "titleLocation": "left",
-        "description": "The vendor has a secure SDLC that includes secure build, secure deployment, defect management, and incident management that align with those used in your organization",
-        "choices": [
-          {
-            "value": 0,
-            "weight": 1,
-            "text": "No"
-          },
-          {
-            "value": 0.25,
-            "weight": 1,
-            "text": "Yes, some of the time"
-          },
-          {
-            "value": 0.5,
-            "weight": 1,
-            "text": "Yes, at least half of the time"
-          },
-          {
-            "value": 1,
-            "weight": 1,
-            "text": "Yes, most or all of the time"
-          }
-        ]
-      }
-    ],
-    "title": "Security Requirements",
-    "state": "collapsed"
-  });}
+      ],
+      "title": "Sicherheitsanforderungen",
+      "state": "collapsed"
+  });
+}
 export default secrequirement;
