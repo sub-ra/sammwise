@@ -483,7 +483,7 @@ const Mysurvey = (prop) => {
             
                     <SurveyButton name="Clear" boolean ={false} onClick={() => clearAnswers(true)}/>
 
-                    <button className="SaveResponses" onClick={()=> saveResponses()}> Antworten speichern </button>
+                    <button className="SaveResponses" onClick={()=> saveResponses()}> Speichern </button>
                         
             </div>
             
@@ -501,7 +501,7 @@ const Mysurvey = (prop) => {
                     </>
                 :
                 <>
-                        <button className="NextPage" onClick={()=> changePage("next")}> Nächste Seite </button>
+                        <button className="NextPage" onClick={()=> changePage("next")}> Weiter </button>
                 </>       
                 }
             </div>
