@@ -476,7 +476,7 @@ const Mysurvey = (prop) => {
         <>
             <h2>Möchten Sie frühere Ergebnisse zum Ausfüllen des Fragebogens verwenden?</h2>
             <p>Wenn Sie eine Datei mit unvollendeten Ergebnissen haben, zu denen Sie zurückkehren möchten, können Sie diese hier hochladen und der Fragebogen wird automatisch mit Ihren Antworten ausgefüllt</p>
-            <DropButton name = "Ergebnis laden" state ={dropDownState} onClick= {value =>handleDropDownButton(value)}/>
+            <DropButton name = "Upload frühere Ergebnisse" state ={dropDownState} onClick= {value =>handleDropDownButton(value)}/>
                 {dropDownState? <InputFile fileName="loadedResults" pageName="assesment"/>:null}
 
             <div className = "pageNav">
