@@ -367,15 +367,15 @@ const Mysurvey = (prop) => {
                     var nextbtnText;
                     
                     if(isLastPanel(index)){
-                        nextbtnText = "Nächstes Modul";
+                        nextbtnText = "Weiter";
                     } else{
-                        nextbtnText = "Nächste Kategorie";
+                        nextbtnText = "Weiter";
                     }
                     
                     var prevPanel = index - 1;
                     if (!(isFirstPanel(index))){
                         if(document.getElementById(prevID) == null){
-                            var prevbtn = createPanelButton("Vorherige Kategorie", prevID);
+                            var prevbtn = createPanelButton("Zurück", prevID);
                             prevbtn.onclick = function () {
                                 panels[index].collapse();
                                 panels[prevPanel].expand();
@@ -476,7 +476,7 @@ const Mysurvey = (prop) => {
         <>
             <h2>Möchten Sie frühere Ergebnisse zum Ausfüllen des Fragebogens verwenden?</h2>
             <p>Wenn Sie eine Datei mit unvollendeten Ergebnissen haben, zu denen Sie zurückkehren möchten, können Sie diese hier hochladen und der Fragebogen wird automatisch mit Ihren Antworten ausgefüllt</p>
-            <DropButton name = "Ergebnisse laden" state ={dropDownState} onClick= {value =>handleDropDownButton(value)}/>
+            <DropButton name = "Ergebnis laden" state ={dropDownState} onClick= {value =>handleDropDownButton(value)}/>
                 {dropDownState? <InputFile fileName="loadedResults" pageName="assesment"/>:null}
 
             <div className = "pageNav">
@@ -497,11 +497,11 @@ const Mysurvey = (prop) => {
             <div className="pageNav">
                 {isDetailsPage?
                     <>
-                        <button className="NextPage" onClick={()=> changePage("next")}> Complete </button>
+                        <button className="NextPage" onClick={()=> changePage("next")}> Abschliessen </button>
                     </>
                 :
                 <>
-                        <button className="NextPage" onClick={()=> changePage("next")}> Next Page </button>
+                        <button className="NextPage" onClick={()=> changePage("next")}> Nächste Seite </button>
                 </>       
                 }
             </div>
